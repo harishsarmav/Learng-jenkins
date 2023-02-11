@@ -1,6 +1,8 @@
 pipeline {
 
-  agent any
+  agent {
+    label ' ansible '
+  }
 
   stages {
 
@@ -9,6 +11,6 @@ pipeline {
         echo 'Hello World'
       }
     }
-     
+
   }
 }
