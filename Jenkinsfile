@@ -27,4 +27,16 @@
 
 @Library('roboshop') _
 
-test()
+pipeline {
+    agent any
+    stages {
+      stage('Test') {
+        steps {
+          script {
+            test()
+          }
+          
+        }
+      }
+    }
+}
