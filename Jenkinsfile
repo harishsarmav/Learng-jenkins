@@ -41,6 +41,12 @@ pipeline {
 
             print abc
 
+            def new1() {
+              print "Hello"
+            }
+
+            new1()
+
           }
 
           script {
@@ -56,6 +62,6 @@ pipeline {
           }
         }
       }
-            
+
     }
 }
