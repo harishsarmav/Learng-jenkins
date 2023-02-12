@@ -48,5 +48,14 @@ pipeline {
           }
         }
       }
+
+      stage('Test1') {
+        steps {
+          script {
+            print "abc = ${abc}"
+          }
+        }
+      }
+            
     }
 }
