@@ -1,3 +1,21 @@
+pipeline {
+
+  agent {
+    label 'ansible'
+  }
+
+  stages {
+
+    stage('Hello') {
+      steps {
+        echo 'Hello World'
+      }
+    }
+  }
+
+}
+
+
 // // pipeline {
 // //
 // //   agent {
@@ -24,12 +42,12 @@
 // //   }
 // //
 // // }
-//
 
-@Library('roboshop') _
 
-env.abc = "Some Data"
-test1.new1()
+// @Library('roboshop') _
+
+// env.abc = "Some Data"
+// test1.new1()
 
 //
 // pipeline {
