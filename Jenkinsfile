@@ -1,19 +1,3 @@
-pipeline {
-
-  agent any
-
-  stages {
-
-    stage('Hello') {
-      steps {
-        echo 'Hello World'
-      }
-    }
-  }
-
-}
-
-
 // // pipeline {
 // //
 // //   agent {
@@ -42,10 +26,10 @@ pipeline {
 // // }
 
 
-// @Library('roboshop') _
+@Library('roboshop') _
 
-// env.abc = "Some Data"
-// test1.new1()
+env.abc = "Some Data"
+test1.new1()
 
 //
 // pipeline {
